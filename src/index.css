@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* src/components/Grid.css */
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(15, 30px);
+  gap: 1px;
+  background-color: black;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+/* src/components/Raindrop.css */
+.raindrop {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: linear-gradient(to bottom, yellow, orange, red);
+  transition: top 0.2s ease-in;
+}
